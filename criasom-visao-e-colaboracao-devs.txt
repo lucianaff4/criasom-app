@@ -1,0 +1,211 @@
+Criasom visão do produto e colaboração
+
+Briefing para desenvolvedores da comunidade
+
+Luiz Criasom • 18 de outubro de 2026
+
+Quero construir com vocês um espaço que ajude o aluno a estudar música com autonomia. Sugestões são bem-vindas. A prioridade é tornar o estudo fácil de começar e agradável de manter, preservando os materiais e os trabalhos que já existem.
+
+Este documento apresenta minha ideia do app, o estado do piloto e uma proposta de colaboração. O desenvolvimento compartilhado ainda não foi configurado. As decisões de produto ficam comigo; a revisão técnica deve ser feita por mantenedores de confiança, com responsabilidades definidas antes dos convites.
+
+Meu estudo vem primeiro
+
+A tela principal deve funcionar como um organizador pessoal inspirado na edição direta do Notion. A pessoa escreve “praticar a música de hoje” em uma linha, edita ali mesmo, marca como concluída e reorganiza quando quiser. Datas, duração, categoria e vínculos são opcionais. Não quero um formulário grande antes de tocar.
+
+O aluno monta seu repertório com músicas, links, notas e etiquetas. Organiza uma semana livre e pode estudar técnica, harmonia, ouvido, improvisação, composição ou qualquer outro foco. O cronograma se adapta à vida da pessoa; sugestões não devem substituir suas escolhas.
+
+Simplicidade para quem tem pouca familiaridade digital
+
+O primeiro acesso deve explicar os botões em passos curtos, com opção de pular e rever o guia. Uma conta nova começa vazia, sem confundir dados de demonstração com registros pessoais. Quero ações evidentes, boa leitura no celular, fonte ajustável e cores com função, acompanhadas de texto ou ícone para não depender só da cor.
+
+Os cursos apoiam a prática
+
+Aulas e musicalidade continuam centrais. As práticas devem convidar o aluno a assistir às aulas, experimentar, ouvir e passar tempo no instrumento. Apostilas precisam abrir na página útil, com zoom. Relógio, metrônomo e backings devem ficar acessíveis sem quebrar o treino ao navegar.
+
+O nome é Criasom, junto. Design final e identidade visual ainda serão fechados. Aprovação de testes técnicos não significa aprovação da experiência.
+
+Comunidade dentro do Criasom
+
+Quero uma comunidade com aparência de feed simples: a pessoa publica, encontra assuntos do seu interesse e responde. Por trás, cada publicação pode formar um tópico com comentários. As categorias ajudam a encontrar conteúdo sem obrigar o aluno a entender uma árvore complicada de fóruns.
+
+Liberdade de temas
+
+- Equipamentos, músicas, recomendações, dúvidas e outros assuntos sugeridos pela própria comunidade.
+
+- Aplicação dos estudos, com vínculo opcional ao curso ou módulo e respeito às permissões de acesso.
+
+- Vídeos e áudios compartilhados por links. Fotos podem acompanhar publicações; não há serviço próprio de hospedagem de vídeo pronto.
+
+- Nome de usuário e foto opcionais no perfil público. E-mail de login permanece privado.
+
+Trocas e vendas com moderação
+
+Existe uma área para anúncios entre participantes. O piloto já tem aceite de termos, denúncia, remoção e restauração de publicações, bloqueio e desbloqueio na comunidade e histórico de ações da moderação. Um bloqueio da comunidade não cancela automaticamente o estudo ou os cursos da pessoa.
+
+A proposta não inclui receber pagamentos, intermediar entregas nem atestar a identidade ou a confiabilidade de um vendedor. Os termos existentes são uma minuta para revisão jurídica. Contato de suporte, política de privacidade, retenção de dados e procedimento para denúncias precisam ser definidos antes de atender alunos reais.
+
+Academia Guitarra Desbloqueada
+
+A academia precisa de acesso próprio, desafios e um espaço organizado para o professor acompanhar vídeos e responder. Os desafios semanais devem apontar para o módulo existente no Club, ou usar uma integração validada, evitando atualizar pastas do app toda semana.
+
+A fila de análise do professor, o repositório dos vídeos e a integração com o Club ainda precisam ser construídos ou validados. O fórum geral não comprova que essa operação da academia está pronta.
+
+O que já existe no laboratório
+
+Fórum com o mesmo login, publicações, respostas, temas, vínculos com módulos, perfil público, trocas e vendas, denúncias e painel de moderação. Há suporte a até três imagens por publicação, com redução de tamanho e entrega protegida. Comentários ainda usam texto e links.
+
+O fluxo de servidor foi exercitado com duas contas fictícias. A rodada mais recente de moderação e imagens tem verificações de servidor e interface isolada; a jornada completa conectada e a revisão de uso no celular ainda precisam ser concluídas.
+
+Conta dados e integração com compras
+
+O piloto conectado executa localmente com interface HTML, CSS e JavaScript e serviços PHP. O banco usado nos testes é SQLite. Há esquema preparado para MySQL, mas ele ainda não foi validado na HostGator. Não existe implantação de produção comprovada.
+
+Parte | Estado em 18 de outubro de 2026
+Meu estudo e ferramentas | Piloto com tarefas, repertório pessoal, semana, práticas, relógio e metrônomo. A experiência segue em revisão.
+Cursos e materiais | Penta módulos 3, 4 e 5 e Harmonia com Arpejos no piloto. Repertório didático Do Zero existe; integração com conta ainda pendente.
+Conta e progresso | Sessão, permissões e persistência local exercitadas com contas sintéticas. Código de entrada aparece numa caixa de teste; e-mail real não foi integrado.
+Compras e hospedagem | Adaptador de eventos e regras de acesso preparados. Compradores reais, webhook real, MySQL, e-mail, domínio e operação ainda dependem de validação.
+
+O que é o webhook neste projeto
+
+Webhook é o aviso que a plataforma de venda envia ao servidor quando ocorre um evento. O caminho previsto é: compra na Hotmart → evento autenticado → atualização dos direitos da conta → acesso autorizado pelo servidor ao app e aos materiais.
+
+O adaptador atual normaliza compra aprovada, reembolso e chargeback. Ele verifica o segredo da origem; o processamento preparado trata repetição de eventos e direitos vinculados a compras. Os testes usam eventos fictícios. Assinaturas, conciliação de compradores antigos e situações comerciais não mapeadas precisam de regras e provas próprias.
+
+Como isso se relaciona ao banco de alunos
+
+O núcleo reúne identidade, sessões, direitos, progresso e conteúdo da comunidade. O direito ao app pode ter prazo diferente do direito ao curso. A interface não decide sozinha se alguém pode entrar: o servidor precisa conferir a conta e o recurso em cada operação protegida.
+
+Desenvolvedores devem receber esquemas e dados inteiramente fictícios. Listas de compradores, e-mails, histórico de estudo, pagamentos, sessões e chaves não pertencem ao repositório comunitário. A entrada de produção continua fechada; esta descrição não autoriza ligar integrações reais.
+
+Como propomos desenvolver juntos
+
+A recomendação inicial é um repositório privado numa organização do GitHub sob controle de Luiz. Ele será o endereço comum do código e das propostas. O convite permite acompanhar o projeto; as permissões determinam quem consegue alterar a versão principal. Esse arranjo ainda precisa ser configurado.
+
+Uma contribuição do começo ao fim
+
+1. Escolher uma melhoria pequena numa lista de tarefas, com resultado esperado e critério de aceite. Evitar duas pessoas implementando a mesma coisa sem combinar.
+
+2. Trabalhar numa versão separada do código, chamada branch ou fork, usando contas e materiais de teste. Cada envio fica registrado no histórico online.
+
+3. Abrir um pull request, que é uma proposta de mudança: explicar o problema, mostrar o resultado e informar os testes e limitações.
+
+4. Receber revisão de alguém diferente do autor. Mudanças de interface passam também pela avaliação de uso de Luiz; mudanças de login, permissões ou dados exigem revisão técnica específica.
+
+5. Um mantenedor integra a proposta aprovada. Publicar uma versão para alunos é outra decisão, com validação e autorização próprias.
+
+Quem pode fazer o quê
+
+Luiz define prioridades e aceita a experiência. Mantenedores de confiança revisam, integram e registram decisões técnicas. Colaboradores propõem código, testam e sugerem melhorias. Alunos interessados também podem ajudar relatando dificuldades, sem acesso técnico ao projeto.
+
+Para começar sem contratação, colaboradores podem ter leitura e enviar propostas por forks privados, se a política do repositório permitir. Se não permitir, a entrada pode ser por patches revisados. Só os responsáveis pela integração precisam de escrita no repositório principal. [1–3]
+
+No GitHub Free, as proteções de branch documentadas não incluem repositórios privados. Não devemos prometer aprovação obrigatória por configuração sem verificar o plano. CODEOWNERS indica responsáveis, mas sozinho não impede uma alteração. Neste início, a barreira deve ser a permissão de escrita restrita. [1]
+
+Tempo real e acesso ao piloto
+
+O GitHub atualiza o projeto a cada envio de código, não a cada tecla. Para trabalhar na mesma edição ao vivo, podemos avaliar sessões curtas de VS Code Live Share entre pessoas de confiança, num ambiente isolado. Não compartilhar o computador de trabalho, terminais, depuração ou portas privadas com todo o grupo. [4]
+
+Ter código online não publica o app. Uma prévia acessível aos testadores exige ambiente de homologação protegido e dados falsos. Hospedagem, automação e custos dessa prévia ainda não foram autorizados.
+
+Proteção do projeto e uso de inteligência artificial
+
+O ambiente comunitário deve permitir contribuir sem dar acesso aos sistemas de operação. Um repositório privado controla quem entra, mas quem pode ler consegue copiar o conteúdo. Revogar um convite não recolhe cópias já baixadas. Por isso, só deve entrar no projeto compartilhado o que pode ser entregue àqueles colaboradores. [3]
+
+Preparação antes de compartilhar
+
+- Selecionar explicitamente fontes, testes, documentação e exemplos fictícios. Revisar os arquivos e o histórico que serão enviados; o .gitignore não remove conteúdo já registrado.
+
+- Excluir bancos, backups, registros de acesso, certificados, chaves, configurações reais, listas de alunos, relatórios internos e materiais pagos dos cursos. Usar amostras próprias ou autorizadas.
+
+- Revisar licenças de dependências e ativos. Definir por escrito as condições de contribuição e uso do código antes de receber trabalho externo. Colaboração privada não significa licença de código aberto.
+
+- Usar contas individuais, autenticação em dois fatores e permissões mínimas. Hospedagem, domínio, compras, e-mail e produção permanecem sob administração separada.
+
+Prompts maliciosos e contribuições de terceiros
+
+Um comentário no código, uma tarefa, um README ou um arquivo pode tentar dar ordens à IA, como pedir que leia segredos ou envie dados. Esse conteúdo deve ser tratado como material a analisar, sem autoridade para mudar permissões. Um filtro de prompts ou uma segunda IA ajudam na revisão, mas não garantem proteção. [5]
+
+A revisão assistida por IA deve operar num ambiente descartável, sem credenciais reais, sem acesso ao banco de alunos e sem capacidade de publicar. Permissões e autorizações precisam ser aplicadas fora do modelo. Alterar instruções de agentes, ferramentas, dependências e scripts de execução exige revisão explícita. [5]
+
+Testes sem acesso privilegiado
+
+Uma mudança pode conter código malicioso mesmo que seu texto pareça normal. Antes de executar, revisar scripts e dependências; depois testar em ambiente isolado com dados fictícios, privilégios mínimos e acesso de rede limitado. Não executar contribuições desconhecidas no computador que guarda os acessos de Luiz.
+
+Se houver automação no GitHub, ela deve começar sem segredos, sem publicação e sem permissão de escrita desnecessária. Não combinar código de contribuidor com credenciais privilegiadas, nem colocar um executor no computador pessoal. Mudanças nos próprios testes e fluxos de automação também precisam ser revisadas. [6]
+
+A IA pode apontar problemas e sugerir correções. A aprovação de segurança exige uma pessoa responsável e testes independentes do autor. Nenhuma revisão elimina totalmente o risco; o objetivo é reduzir o alcance de uma falha e permitir recuperação.
+
+Possibilidades futuras e primeiras contribuições
+
+Orientação personalizada de estudo
+
+Quero que o app conheça melhor o contexto musical da pessoa: objetivos, experiência, repertório, dificuldades e tempo disponível. Hoje há um personalizador beta simples, baseado em perguntas e regras. Ele não é um chatbot de inteligência artificial.
+
+No futuro, um chatbot pode sugerir práticas e ajudar a montar uma rotina editável, apoiado nos conteúdos autorizados dos cursos. Deve explicar suas sugestões e reconhecer limites. A prioridade continua sendo constância, atenção, escuta e tempo no instrumento, com menos distração de telas.
+
+Esse recurso depende de avaliar qualidade pedagógica, consentimento e dados necessários, isolamento entre contas e custo de uso. Ele não deve ganhar acesso a pagamentos, administração, execução de código ou informações de outros alunos. A oferta de conteúdo precisa respeitar os direitos de cada conta.
+
+Backings e ferramentas de áudio
+
+Quero investigar geração ou preparação de acompanhamentos para praticar, possivelmente com Moises ou serviço equivalente. Separar instrumentos de uma gravação e gerar um acompanhamento novo são funções diferentes; a solução deve atender ao exercício musical de fato.
+
+A Music AI, dos criadores do Moises, documenta uma plataforma com API de processamento de áudio. Isso é uma referência para avaliação, não uma integração pronta nem confirmação de que toda função do Moises esteja disponível pela API. Escopo, licença dos áudios, privacidade, limites e custo por uso devem ser conferidos antes de implementar. [7]
+
+Ordem de contribuição proposta
+
+Prioridade | Entrega com critério de aceite
+1   Uso básico | Criar, editar, concluir e reorganizar tarefas sem campos obrigatórios extras; testar navegação, persistência e relógio sem regressão.
+2   Acesso inicial | Conta vazia compreensível, guia que pode ser pulado e revisto, celular e acessibilidade; testar com pessoas de pouca familiaridade digital.
+3   Comunidade | Feed claro e prova conectada de publicar, responder, denunciar, remover e bloquear com duas contas; verificar quem pode ver cada imagem.
+4   Operação | Validar MySQL, e-mail, compras reais em ambiente autorizado, backups e restauração, concorrência e carga; só então estimar capacidade e hospedagem.
+Depois | Avaliar chatbot, áudio e fila da academia em propostas separadas, com benefício musical, custo e limites explícitos.
+
+Datas e responsáveis serão combinados com quem participar. Não há promessa de capacidade para uma quantidade de alunos sem teste de carga e conhecimento do plano de hospedagem.
+
+Referência técnica e próximos acordos
+
+Como aproveitar o que já foi feito
+
+A interface editável está no conjunto app.js, model.js, styles.css, index.html e dados do piloto. Um gerador produz o HTML de demonstração. As mudanças devem ir às fontes e depois regenerar a saída; editar só o arquivo gerado perde trabalho na próxima geração.
+
+A base PHP reúne conta, sessões, política de acesso, recursos protegidos, progresso, adaptador Hotmart e fórum. Há clientes JavaScript separados para conversar com esses serviços e esquemas SQL de teste e produção. O laboratório local tem seu próprio inicializador; sua caixa de códigos de teste nunca deve ser publicada.
+
+Os materiais originais devem ser preservados no acervo privado. Para colaboração, preparar uma seleção de fontes e amostras, sem copiar integralmente a pasta de trabalho. Ainda faltam empacotamento limpo, instruções de instalação reproduzíveis e prova de execução numa máquina de colaborador.
+
+O que precisa ser definido para abrir os convites
+
+- Qual conta ou organização será controlada por Luiz e quem serão os primeiros mantenedores técnicos.
+
+- A lista exata de arquivos compartilháveis, condições de contribuição e uso, política de acesso e forma de receber propostas sem escrita ampla.
+
+- Como executar o ambiente fictício e comprovar revisão, testes e retorno à versão anterior. Automação e prévias online ficam para aprovação específica.
+
+O domínio dos alunos e o repositório de desenvolvimento são endereços diferentes. O destino planejado para o app é um subdomínio do site de Luiz, ainda sujeito à configuração e validação da hospedagem. Nada neste documento altera DNS, publica o app ou ativa cobranças.
+
+Fontes técnicas consultadas
+
+As referências abaixo sustentam a proposta de colaboração. O estado do app foi descrito a partir das decisões de Luiz, das fontes locais e dos registros de testes existentes; não foi apresentada uma certificação de segurança ou produção.
+
+1   GitHub — proteções de branch e disponibilidade por plano
+https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+
+2   GitHub — permissões em repositórios de organizações
+https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization
+
+3   GitHub — visibilidade e permissões de forks
+https://docs.github.com/en/pull-requests/reference/forks
+
+4   Microsoft — segurança do Live Share
+https://learn.microsoft.com/en-us/visualstudio/liveshare/reference/security
+
+5   OWASP — prevenção de prompt injection
+https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html
+
+6   GitHub — segurança de automações
+https://docs.github.com/en/actions/reference/security/secure-use
+
+7   Music AI — plataforma e processamento de áudio
+https://music.ai/platform/
+
+Fontes consultadas em 18 de outubro de 2026. Repositório, convites, permissões e serviços descritos como propostas ainda não foram criados ou ativados.

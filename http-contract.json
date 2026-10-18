@@ -1,0 +1,125 @@
+{
+  "schema": "criasom.http-contract/1",
+  "version": 1,
+  "recordedOn": "2026-10-16",
+  "basePath": "/api/v1",
+  "status": "candidate_contract_client_fixtures_only_not_production_validation",
+  "trust": {
+    "identity": "Derived from the server session; clients never select verified status, account ownership or purchased capabilities.",
+    "capabilities": "Array of scope strings for presentation only; every resource/state authorization is repeated on the server.",
+    "hotmartWebhook": "Backend-only endpoint. Not exposed through PlatformClient; requires configured HOTTOK, not student CSRF or cookie authentication.",
+    "emailProof": "A typed buyer email is not a login. The code must be delivered to and confirmed by its owner. No Hotmart password or SSO is implemented."
+  },
+  "transport": {
+    "scheme": "https",
+    "origin": "Exact configured origin; never derived from untrusted Host or arbitrary proxy headers.",
+    "cors": "No cross-origin browser access; no wildcard CORS.",
+    "credentials": "same-origin",
+    "fetchCache": "no-store",
+    "fetchRedirect": "error",
+    "responseCacheControl": "private, no-store",
+    "serviceWorker": "Must not cache /api/, protected resources or authenticated responses.",
+    "mutationCsrf": "X-CSRF-Token, exactly 64 hexadecimal characters; required for browser POST including anonymous request/confirmation of a code.",
+    "mutationOrigin": "Reject cross-site mutations; validate the configured origin in addition to CSRF.",
+    "cookies": {
+      "prefix": "__Host-",
+      "Secure": true,
+      "HttpOnly": true,
+      "SameSite": "Lax",
+      "Path": "/",
+      "Domain": null,
+      "javascriptReadable": false,
+      "tokenInJsonOrBrowserStorage": false,
+      "rotation": "Confirming a code establishes a new authenticated cookie; client refreshes session metadata afterwards."
+    }
+  },
+  "limits": {
+    "requestBodyUtf8Bytes": 131072,
+    "stateDataJsonUtf8Bytes": 65536,
+    "resourceIdPattern": "^[a-zA-Z0-9_-]{1,80}$",
+    "challengeIdPattern": "^[a-fA-F0-9]{32}$",
+    "codePattern": "^[0-9]{8}$",
+    "csrfPattern": "^[a-fA-F0-9]{64}$",
+    "stateAreas": ["study", "repertoire", "preferences"],
+    "revision": "Nonnegative JSON safe integer.",
+    "rateLimits": "Enforced by the server by email and actual connection origin; browser validation does not replace server limits."
+  },
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/session",
+      "successStatus": 200,
+      "anonymousExample": {"authenticated": false, "user": null, "csrf": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "capabilities": []},
+      "authenticatedExample": {"authenticated": true, "user": {"id": "student_demo", "email": "student@example.invalid"}, "csrf": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "capabilities": ["app", "course:penta"]},
+      "rules": ["authenticated must be boolean.", "Authenticated user requires id and email; anonymous user must be absent or null and capabilities empty.", "capabilities is an array of scope strings, not an object.", "Anonymous session context grants no course content."]
+    },
+    {
+      "method": "POST",
+      "path": "/auth/request-code",
+      "bodyExample": {"email": "student@example.invalid"},
+      "successStatus": 202,
+      "responseExample": {"accepted": true, "challenge_id": "11111111111111111111111111111111", "expires_in": 600},
+      "rules": ["Generic acceptance; no disclosure of existing enrollment.", "The response never includes the OTP, session token or email content."]
+    },
+    {
+      "method": "POST",
+      "path": "/auth/confirm-code",
+      "bodyExample": {"challenge_id": "11111111111111111111111111111111", "code": "12345678"},
+      "successStatus": 200,
+      "responseExample": {"authenticated": true},
+      "invalidCodeStatus": 422,
+      "rules": ["Code and challenge above are synthetic fixture values only.", "Incorrect OTP uses HTTP422; preserve anonymous context and CSRF for a permitted retry. HTTP401 remains reserved for authentication expiry/absence and clears client context.", "Server handles session cookie; client refreshes GET /session. No cookie/token in JSON."]
+    },
+    {
+      "method": "POST",
+      "path": "/auth/logout",
+      "bodyExample": {},
+      "successStatus": 200,
+      "responseExample": {"signed_out": true},
+      "rules": ["Server revokes session; client always clears local private view state.", "Network failure is not reported as successful server logout."]
+    },
+    {
+      "method": "GET",
+      "path": "/resources/{id}",
+      "successStatus": 200,
+      "response": "Authorized bytes with configured safe MIME and private, no-store. No user-selected file path or grant.",
+      "unavailableStatus": 404,
+      "rules": ["Unauthorized and missing resources are indistinguishable to the caller.", "ID must match the resourceIdPattern; file keys and ownership are looked up server-side.", "Playback/media integrations are separate; receiving legitimate bytes cannot prevent all copying."]
+    },
+    {
+      "method": "GET",
+      "path": "/state/{study|repertoire|preferences}",
+      "successStatus": 200,
+      "responseExample": {"revision": 0, "data": {}},
+      "rules": ["data is an object or array, never null or a scalar.", "Account ID comes only from the server session."]
+    },
+    {
+      "method": "POST",
+      "path": "/state/{study|repertoire|preferences}",
+      "bodyExample": {"expected_revision": 0, "data": {"favorites": ["song_demo"]}},
+      "successStatus": 200,
+      "responseExample": {"revision": 1, "data": {"favorites": ["song_demo"]}},
+      "conflictStatus": 409,
+      "rules": ["Atomic compare-and-save; conflict never causes a silent retry or overwrite.", "data is an object or array within the UTF-8 limit."]
+    },
+    {
+      "method": "POST",
+      "path": "/webhooks/hotmart",
+      "clientAvailable": false,
+      "authentication": "Configured X-HOTMART-HOTTOK validated by the backend.",
+      "rules": ["Persist validated events transactionally before acknowledgement.", "No browser session or client-selected grant replaces event authentication."]
+    }
+  ],
+  "clientFailureHandling": {
+    "401": "Clear private state, capabilities and CSRF; abort pending requests and require sign-in.",
+    "403": "Show access denied; no entitlement fallback.",
+    "404": "Generic unavailable resource result; do not reveal existence.",
+    "409": "Reload state before saving; do not retry automatically.",
+    "422": "Invalid OTP/input is rejected without clearing anonymous CSRF context; the user can retry within server limits. Do not treat this as a valid login.",
+    "invalidPayload": "Reject malformed payloads. Invalid session data clears private state.",
+    "epoch": "Responses begun before account clear/change cannot restore data, including delayed JSON/blob decoding.",
+    "capabilityChange": "Invalidate in-flight private state when refreshed scopes change.",
+    "storage": "No session credentials, OTP or grant authority stored in localStorage/sessionStorage."
+  },
+  "testBoundary": "The contract tests inject in-memory fetch/Response fixtures. They are client simulation only: no PHP execution, no HTTP server, no Node backend, no provider or production integration."
+}

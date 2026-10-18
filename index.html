@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174c3c">
+  <title>Criasom · Meu estudo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <header class="header">
+    <a class="brand" href="#hoje" aria-label="Criasom, início"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M4 11v8m6-14v20m6-17v14m6-11v8m5-6v4"/></svg>Criasom<span>meu estudo</span></a>
+    <nav aria-label="Navegação principal"><a href="#hoje">Meu estudo</a><a href="#repertorio">Meu repertório</a><a href="#semana">Minha semana</a><a href="#cursos">Cursos</a><a href="#comunidade/geral">Comunidade</a><a href="#como">Ajuda</a></nav>
+    <div class="preferences"><button id="font" class="icon" aria-label="Aumentar tamanho do texto" title="Tamanho do texto">A+</button><button id="theme" class="icon" aria-label="Ativar tema escuro" title="Trocar tema">◐</button></div>
+  </header>
+  <div id="storage-warning" role="alert" hidden></div>
+  <main id="main" tabindex="-1"><p class="loading">Preparando seu espaço de estudo…</p></main>
+  <nav class="footer-links" aria-label="Mais recursos"><a href="#academia">Academia</a><a href="#personalizador">Personalizador <span class="beta-badge">BETA</span></a><a href="#como">Guia e primeiro acesso</a><a href="#progresso">Meus registros</a></nav>
+  <footer><span class="status-dot"></span> Piloto local · seus registros ficam neste navegador. <button class="text-button" data-action="about">Sobre este teste</button></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <noscript>Ative o JavaScript para usar o cronograma e as ferramentas de prática.</noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

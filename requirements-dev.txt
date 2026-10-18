@@ -1,0 +1,2 @@
+# Somente para gerar o certificado local de desenvolvimento.
+cryptography==50.0.2

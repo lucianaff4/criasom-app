@@ -1,0 +1,2204 @@
+{
+  "version": "community-development-synthetic-1",
+  "developmentSample": true,
+  "courses": [
+    {
+      "id": "penta",
+      "title": "Destravando a Penta",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "harmonia",
+      "title": "Destravando a Harmonia",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "harmonia2",
+      "title": "Destravando a Harmonia II",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "zero",
+      "title": "Do Zero às Suas Músicas Favoritas",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "licks",
+      "title": "Licks e Frases",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "ritmo",
+      "title": "Ritmo Solto",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "mestres",
+      "title": "Aulas dos Mestres",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "ouvido",
+      "title": "Ouvido Treinado",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "evolucao",
+      "title": "Evolução Constante",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "timbre",
+      "title": "Segredos do Timbre",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    },
+    {
+      "id": "poderoso",
+      "title": "Ouvido Poderoso",
+      "summary": "Ambiente de desenvolvimento com conteúdo fictício.",
+      "salesUrl": null,
+      "cover": "assets/demo-cover.png"
+    }
+  ],
+  "moduleCatalog": [
+    {
+      "id": "dap:modulo:03",
+      "number": 3,
+      "title": "Módulo demonstrativo 1",
+      "lessonCount": 4,
+      "courseId": "penta"
+    },
+    {
+      "id": "dap:modulo:04",
+      "number": 4,
+      "title": "Módulo demonstrativo 2",
+      "lessonCount": 10,
+      "courseId": "penta"
+    },
+    {
+      "id": "dap:modulo:05",
+      "number": 5,
+      "title": "Módulo demonstrativo 3",
+      "lessonCount": 7,
+      "courseId": "penta"
+    },
+    {
+      "id": "dah:modulo:arpejos",
+      "number": 6,
+      "title": "Módulo demonstrativo 4",
+      "lessonCount": 12,
+      "courseId": "harmonia"
+    }
+  ],
+  "modules": [
+    {
+      "id": "dap:modulo:03",
+      "number": 3,
+      "courseId": "penta",
+      "title": "Módulo demonstrativo 1",
+      "goal": "Exercitar as funções do aplicativo sem distribuir conteúdo do curso.",
+      "status": "Amostra fictícia para desenvolvimento",
+      "lessons": [
+        {
+          "id": "dap:aula:007",
+          "title": "Aula de demonstração 1",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:008",
+          "title": "Aula de demonstração 2",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:009",
+          "title": "Aula de demonstração 3",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:010",
+          "title": "Aula de demonstração 4",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        }
+      ],
+      "practices": [
+        {
+          "id": "dap-m03-s01",
+          "title": "Prática demonstrativa 1",
+          "displayTitle": "Prática demonstrativa 1",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:007"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 15
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            15
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m03-s02"
+        },
+        {
+          "id": "dap-m03-s02",
+          "title": "Prática demonstrativa 2",
+          "displayTitle": "Prática demonstrativa 2",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:007"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 18
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            18
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m03-s03"
+        },
+        {
+          "id": "dap-m03-s03",
+          "title": "Prática demonstrativa 3",
+          "displayTitle": "Prática demonstrativa 3",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:007"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 20
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            20
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m03-s04"
+        },
+        {
+          "id": "dap-m03-s04",
+          "title": "Prática demonstrativa 4",
+          "displayTitle": "Prática demonstrativa 4",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:007"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 21
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            21
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m03-s05"
+        },
+        {
+          "id": "dap-m03-s05",
+          "title": "Prática demonstrativa 5",
+          "displayTitle": "Prática demonstrativa 5",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:007"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 19
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            19
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m03-s01"
+        }
+      ],
+      "guide": {
+        "version": 1,
+        "moduleId": "dap:modulo:03",
+        "title": "Guia de teste",
+        "intro": "Escolha uma prática para testar a interface.",
+        "guideNote": "Conteúdo fictício. Não representa uma aula do curso.",
+        "repeatNote": "Você pode repetir este teste.",
+        "defaultPracticeIds": [
+          "dap-m03-s01"
+        ],
+        "suggestedPracticeOrder": [
+          "dap-m03-s01",
+          "dap-m03-s02",
+          "dap-m03-s03",
+          "dap-m03-s04",
+          "dap-m03-s05"
+        ],
+        "optionalPracticeIds": [],
+        "stages": [
+          {
+            "id": "demo-0",
+            "title": "Experimentar",
+            "objective": "Testar navegação e persistência.",
+            "practiceIds": [
+              "dap-m03-s01",
+              "dap-m03-s02",
+              "dap-m03-s03",
+              "dap-m03-s04",
+              "dap-m03-s05"
+            ],
+            "defaultPracticeId": "dap-m03-s01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dap:modulo:04",
+      "number": 4,
+      "courseId": "penta",
+      "title": "Módulo demonstrativo 2",
+      "goal": "Exercitar as funções do aplicativo sem distribuir conteúdo do curso.",
+      "status": "Amostra fictícia para desenvolvimento",
+      "lessons": [
+        {
+          "id": "dap:aula:011",
+          "title": "Aula de demonstração 1",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:012",
+          "title": "Aula de demonstração 2",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:013",
+          "title": "Aula de demonstração 3",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:014",
+          "title": "Aula de demonstração 4",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:015",
+          "title": "Aula de demonstração 5",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:016",
+          "title": "Aula de demonstração 6",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:017",
+          "title": "Aula de demonstração 7",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:018",
+          "title": "Aula de demonstração 8",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:019",
+          "title": "Aula de demonstração 9",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:020",
+          "title": "Aula de demonstração 10",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        }
+      ],
+      "practices": [
+        {
+          "id": "dap-m04-s01",
+          "title": "Prática demonstrativa 1",
+          "displayTitle": "Prática demonstrativa 1",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 24
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            24
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s02"
+        },
+        {
+          "id": "dap-m04-s02",
+          "title": "Prática demonstrativa 2",
+          "displayTitle": "Prática demonstrativa 2",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 26
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            26
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s03"
+        },
+        {
+          "id": "dap-m04-s03",
+          "title": "Prática demonstrativa 3",
+          "displayTitle": "Prática demonstrativa 3",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 28
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            28
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s04"
+        },
+        {
+          "id": "dap-m04-s04",
+          "title": "Prática demonstrativa 4",
+          "displayTitle": "Prática demonstrativa 4",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 30
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            30
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s05"
+        },
+        {
+          "id": "dap-m04-s05",
+          "title": "Prática demonstrativa 5",
+          "displayTitle": "Prática demonstrativa 5",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 33
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            33
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s06"
+        },
+        {
+          "id": "dap-m04-s06",
+          "title": "Prática demonstrativa 6",
+          "displayTitle": "Prática demonstrativa 6",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 34
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            34
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s07"
+        },
+        {
+          "id": "dap-m04-s07",
+          "title": "Prática demonstrativa 7",
+          "displayTitle": "Prática demonstrativa 7",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 40
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            40
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s08"
+        },
+        {
+          "id": "dap-m04-s08",
+          "title": "Prática demonstrativa 8",
+          "displayTitle": "Prática demonstrativa 8",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 42
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            42
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s09"
+        },
+        {
+          "id": "dap-m04-s09",
+          "title": "Prática demonstrativa 9",
+          "displayTitle": "Prática demonstrativa 9",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 46
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            46
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s10"
+        },
+        {
+          "id": "dap-m04-s10",
+          "title": "Prática demonstrativa 10",
+          "displayTitle": "Prática demonstrativa 10",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:011"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": 50
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            50
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "dap-m04-s01"
+        }
+      ],
+      "guide": {
+        "version": 1,
+        "moduleId": "dap:modulo:04",
+        "title": "Guia de teste",
+        "intro": "Escolha uma prática para testar a interface.",
+        "guideNote": "Conteúdo fictício. Não representa uma aula do curso.",
+        "repeatNote": "Você pode repetir este teste.",
+        "defaultPracticeIds": [
+          "dap-m04-s01"
+        ],
+        "suggestedPracticeOrder": [
+          "dap-m04-s01",
+          "dap-m04-s02",
+          "dap-m04-s03",
+          "dap-m04-s04",
+          "dap-m04-s05",
+          "dap-m04-s06",
+          "dap-m04-s07",
+          "dap-m04-s08",
+          "dap-m04-s09",
+          "dap-m04-s10"
+        ],
+        "optionalPracticeIds": [],
+        "stages": [
+          {
+            "id": "demo-1",
+            "title": "Experimentar",
+            "objective": "Testar navegação e persistência.",
+            "practiceIds": [
+              "dap-m04-s01",
+              "dap-m04-s02",
+              "dap-m04-s03",
+              "dap-m04-s04",
+              "dap-m04-s05",
+              "dap-m04-s06",
+              "dap-m04-s07",
+              "dap-m04-s08",
+              "dap-m04-s09",
+              "dap-m04-s10"
+            ],
+            "defaultPracticeId": "dap-m04-s01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dap:modulo:05",
+      "number": 5,
+      "courseId": "penta",
+      "title": "Módulo demonstrativo 3",
+      "goal": "Exercitar as funções do aplicativo sem distribuir conteúdo do curso.",
+      "status": "Amostra fictícia para desenvolvimento",
+      "lessons": [
+        {
+          "id": "dap:aula:021",
+          "title": "Aula de demonstração 1",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:022",
+          "title": "Aula de demonstração 2",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:023",
+          "title": "Aula de demonstração 3",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:024",
+          "title": "Aula de demonstração 4",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:025",
+          "title": "Aula de demonstração 5",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:026",
+          "title": "Aula de demonstração 6",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dap:aula:027",
+          "title": "Aula de demonstração 7",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        }
+      ],
+      "practices": [
+        {
+          "id": "penta-m05-01",
+          "title": "Prática demonstrativa 1",
+          "displayTitle": "Prática demonstrativa 1",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:56"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:56"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-02"
+        },
+        {
+          "id": "penta-m05-02",
+          "title": "Prática demonstrativa 2",
+          "displayTitle": "Prática demonstrativa 2",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:58"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:58"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-03"
+        },
+        {
+          "id": "penta-m05-03",
+          "title": "Prática demonstrativa 3",
+          "displayTitle": "Prática demonstrativa 3",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:60"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:60"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-04"
+        },
+        {
+          "id": "penta-m05-04",
+          "title": "Prática demonstrativa 4",
+          "displayTitle": "Prática demonstrativa 4",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:61"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:61"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-05"
+        },
+        {
+          "id": "penta-m05-05",
+          "title": "Prática demonstrativa 5",
+          "displayTitle": "Prática demonstrativa 5",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:63"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:63"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-06"
+        },
+        {
+          "id": "penta-m05-06",
+          "title": "Prática demonstrativa 6",
+          "displayTitle": "Prática demonstrativa 6",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:66"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:66"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-07"
+        },
+        {
+          "id": "penta-m05-07",
+          "title": "Prática demonstrativa 7",
+          "displayTitle": "Prática demonstrativa 7",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:63"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:63"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-08"
+        },
+        {
+          "id": "penta-m05-08",
+          "title": "Prática demonstrativa 8",
+          "displayTitle": "Prática demonstrativa 8",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:58"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:58"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-09"
+        },
+        {
+          "id": "penta-m05-09",
+          "title": "Prática demonstrativa 9",
+          "displayTitle": "Prática demonstrativa 9",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dap:aula:021"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "penta:69"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "penta:69"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "penta-m05-01"
+        }
+      ],
+      "guide": {
+        "version": 1,
+        "moduleId": "dap:modulo:05",
+        "title": "Guia de teste",
+        "intro": "Escolha uma prática para testar a interface.",
+        "guideNote": "Conteúdo fictício. Não representa uma aula do curso.",
+        "repeatNote": "Você pode repetir este teste.",
+        "defaultPracticeIds": [
+          "penta-m05-01"
+        ],
+        "suggestedPracticeOrder": [
+          "penta-m05-01",
+          "penta-m05-02",
+          "penta-m05-03",
+          "penta-m05-04",
+          "penta-m05-05",
+          "penta-m05-06",
+          "penta-m05-07",
+          "penta-m05-08",
+          "penta-m05-09"
+        ],
+        "optionalPracticeIds": [],
+        "stages": [
+          {
+            "id": "demo-2",
+            "title": "Experimentar",
+            "objective": "Testar navegação e persistência.",
+            "practiceIds": [
+              "penta-m05-01",
+              "penta-m05-02",
+              "penta-m05-03",
+              "penta-m05-04",
+              "penta-m05-05",
+              "penta-m05-06",
+              "penta-m05-07",
+              "penta-m05-08",
+              "penta-m05-09"
+            ],
+            "defaultPracticeId": "penta-m05-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dah:modulo:arpejos",
+      "number": 6,
+      "courseId": "harmonia",
+      "title": "Módulo demonstrativo 4",
+      "goal": "Exercitar as funções do aplicativo sem distribuir conteúdo do curso.",
+      "status": "Amostra fictícia para desenvolvimento",
+      "lessons": [
+        {
+          "id": "dah:aula:033",
+          "title": "Aula de demonstração 1",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:034",
+          "title": "Aula de demonstração 2",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:035",
+          "title": "Aula de demonstração 3",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:036",
+          "title": "Aula de demonstração 4",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:037",
+          "title": "Aula de demonstração 5",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:038",
+          "title": "Aula de demonstração 6",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:040",
+          "title": "Aula de demonstração 7",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:club:YOmNo8VQ4d",
+          "title": "Aula de demonstração 8",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:041",
+          "title": "Aula de demonstração 9",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:club:K4klaw8zeY",
+          "title": "Aula de demonstração 10",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:039",
+          "title": "Aula de demonstração 11",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        },
+        {
+          "id": "dah:aula:042",
+          "title": "Aula de demonstração 12",
+          "url": null,
+          "focus": "Exemplo sem aula ou vídeo comercial."
+        }
+      ],
+      "practices": [
+        {
+          "id": "h-arpejos-01",
+          "title": "Prática demonstrativa 1",
+          "displayTitle": "Prática demonstrativa 1",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:84"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:84"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-02"
+        },
+        {
+          "id": "h-arpejos-02",
+          "title": "Prática demonstrativa 2",
+          "displayTitle": "Prática demonstrativa 2",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:93"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:93"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-03"
+        },
+        {
+          "id": "h-arpejos-03",
+          "title": "Prática demonstrativa 3",
+          "displayTitle": "Prática demonstrativa 3",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:100"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:100"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-04"
+        },
+        {
+          "id": "h-arpejos-04",
+          "title": "Prática demonstrativa 4",
+          "displayTitle": "Prática demonstrativa 4",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:97"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:97"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-09"
+        },
+        {
+          "id": "h-arpejos-09",
+          "title": "Prática demonstrativa 5",
+          "displayTitle": "Prática demonstrativa 5",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela."
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-05"
+        },
+        {
+          "id": "h-arpejos-05",
+          "title": "Prática demonstrativa 6",
+          "displayTitle": "Prática demonstrativa 6",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:109"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:109"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-06"
+        },
+        {
+          "id": "h-arpejos-06",
+          "title": "Prática demonstrativa 7",
+          "displayTitle": "Prática demonstrativa 7",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:110"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:110"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-07"
+        },
+        {
+          "id": "h-arpejos-07",
+          "title": "Prática demonstrativa 8",
+          "displayTitle": "Prática demonstrativa 8",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:115"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:115"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-10"
+        },
+        {
+          "id": "h-arpejos-10",
+          "title": "Prática demonstrativa 9",
+          "displayTitle": "Prática demonstrativa 9",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela."
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-08"
+        },
+        {
+          "id": "h-arpejos-08",
+          "title": "Prática demonstrativa 10",
+          "displayTitle": "Prática demonstrativa 10",
+          "objective": "Testar o fluxo de estudo com uma atividade escolhida por você.",
+          "lessonIds": [
+            "dah:aula:033"
+          ],
+          "steps": [
+            {
+              "title": "Prepare seu estudo",
+              "instruction": "Escolha uma nota confortável e observe o som. Esta é uma amostra fictícia para testar a tela.",
+              "pageKey": "harmonia:119"
+            },
+            {
+              "title": "Experimente e registre",
+              "instruction": "Use o relógio ou o metrônomo, faça uma tentativa curta e registre como foi."
+            }
+          ],
+          "help": "Diminua o ritmo ou faça uma pausa.",
+          "check": "Consegui testar a prática e salvar meu registro?",
+          "pages": [
+            "harmonia:119"
+          ],
+          "positionIds": [],
+          "backingTrackId": null,
+          "nextPracticeId": "h-arpejos-01"
+        }
+      ],
+      "guide": {
+        "version": 1,
+        "moduleId": "dah:modulo:arpejos",
+        "title": "Guia de teste",
+        "intro": "Escolha uma prática para testar a interface.",
+        "guideNote": "Conteúdo fictício. Não representa uma aula do curso.",
+        "repeatNote": "Você pode repetir este teste.",
+        "defaultPracticeIds": [
+          "h-arpejos-01"
+        ],
+        "suggestedPracticeOrder": [
+          "h-arpejos-01",
+          "h-arpejos-02",
+          "h-arpejos-03",
+          "h-arpejos-04",
+          "h-arpejos-09",
+          "h-arpejos-05",
+          "h-arpejos-06",
+          "h-arpejos-07",
+          "h-arpejos-10",
+          "h-arpejos-08"
+        ],
+        "optionalPracticeIds": [],
+        "stages": [
+          {
+            "id": "demo-3",
+            "title": "Experimentar",
+            "objective": "Testar navegação e persistência.",
+            "practiceIds": [
+              "h-arpejos-01",
+              "h-arpejos-02",
+              "h-arpejos-03",
+              "h-arpejos-04",
+              "h-arpejos-09",
+              "h-arpejos-05",
+              "h-arpejos-06",
+              "h-arpejos-07",
+              "h-arpejos-10",
+              "h-arpejos-08"
+            ],
+            "defaultPracticeId": "h-arpejos-01"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "15": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 15,
+      "printedPage": 15,
+      "label": "Exemplo fictício"
+    },
+    "16": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 16,
+      "printedPage": 16,
+      "label": "Exemplo fictício"
+    },
+    "17": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 17,
+      "printedPage": 17,
+      "label": "Exemplo fictício"
+    },
+    "18": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 18,
+      "printedPage": 18,
+      "label": "Exemplo fictício"
+    },
+    "19": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 19,
+      "printedPage": 19,
+      "label": "Exemplo fictício"
+    },
+    "20": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 20,
+      "printedPage": 20,
+      "label": "Exemplo fictício"
+    },
+    "21": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 21,
+      "printedPage": 21,
+      "label": "Exemplo fictício"
+    },
+    "22": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 22,
+      "printedPage": 22,
+      "label": "Exemplo fictício"
+    },
+    "24": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 24,
+      "printedPage": 24,
+      "label": "Exemplo fictício"
+    },
+    "25": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 25,
+      "printedPage": 25,
+      "label": "Exemplo fictício"
+    },
+    "26": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 26,
+      "printedPage": 26,
+      "label": "Exemplo fictício"
+    },
+    "27": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 27,
+      "printedPage": 27,
+      "label": "Exemplo fictício"
+    },
+    "28": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 28,
+      "printedPage": 28,
+      "label": "Exemplo fictício"
+    },
+    "29": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 29,
+      "printedPage": 29,
+      "label": "Exemplo fictício"
+    },
+    "30": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 30,
+      "printedPage": 30,
+      "label": "Exemplo fictício"
+    },
+    "31": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 31,
+      "printedPage": 31,
+      "label": "Exemplo fictício"
+    },
+    "33": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 33,
+      "printedPage": 33,
+      "label": "Exemplo fictício"
+    },
+    "34": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 34,
+      "printedPage": 34,
+      "label": "Exemplo fictício"
+    },
+    "35": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 35,
+      "printedPage": 35,
+      "label": "Exemplo fictício"
+    },
+    "36": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 36,
+      "printedPage": 36,
+      "label": "Exemplo fictício"
+    },
+    "37": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 37,
+      "printedPage": 37,
+      "label": "Exemplo fictício"
+    },
+    "38": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 38,
+      "printedPage": 38,
+      "label": "Exemplo fictício"
+    },
+    "39": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 39,
+      "printedPage": 39,
+      "label": "Exemplo fictício"
+    },
+    "40": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 40,
+      "printedPage": 40,
+      "label": "Exemplo fictício"
+    },
+    "42": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 42,
+      "printedPage": 42,
+      "label": "Exemplo fictício"
+    },
+    "43": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 43,
+      "printedPage": 43,
+      "label": "Exemplo fictício"
+    },
+    "44": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 44,
+      "printedPage": 44,
+      "label": "Exemplo fictício"
+    },
+    "46": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 46,
+      "printedPage": 46,
+      "label": "Exemplo fictício"
+    },
+    "47": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 47,
+      "printedPage": 47,
+      "label": "Exemplo fictício"
+    },
+    "48": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 48,
+      "printedPage": 48,
+      "label": "Exemplo fictício"
+    },
+    "50": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 50,
+      "printedPage": 50,
+      "label": "Exemplo fictício"
+    },
+    "51": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 51,
+      "printedPage": 51,
+      "label": "Exemplo fictício"
+    },
+    "52": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 52,
+      "printedPage": 52,
+      "label": "Exemplo fictício"
+    },
+    "53": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 53,
+      "printedPage": 53,
+      "label": "Exemplo fictício"
+    },
+    "54": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 54,
+      "printedPage": 54,
+      "label": "Exemplo fictício"
+    },
+    "penta:56": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 56,
+      "printedPage": 56,
+      "label": "Exemplo fictício"
+    },
+    "penta:57": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 57,
+      "printedPage": 57,
+      "label": "Exemplo fictício"
+    },
+    "penta:58": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 58,
+      "printedPage": 58,
+      "label": "Exemplo fictício"
+    },
+    "penta:59": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 59,
+      "printedPage": 59,
+      "label": "Exemplo fictício"
+    },
+    "penta:60": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 60,
+      "printedPage": 60,
+      "label": "Exemplo fictício"
+    },
+    "penta:61": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 61,
+      "printedPage": 61,
+      "label": "Exemplo fictício"
+    },
+    "penta:62": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 62,
+      "printedPage": 62,
+      "label": "Exemplo fictício"
+    },
+    "penta:63": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 63,
+      "printedPage": 63,
+      "label": "Exemplo fictício"
+    },
+    "penta:64": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 64,
+      "printedPage": 64,
+      "label": "Exemplo fictício"
+    },
+    "penta:65": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 65,
+      "printedPage": 65,
+      "label": "Exemplo fictício"
+    },
+    "penta:66": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 66,
+      "printedPage": 66,
+      "label": "Exemplo fictício"
+    },
+    "penta:67": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 67,
+      "printedPage": 67,
+      "label": "Exemplo fictício"
+    },
+    "penta:68": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 68,
+      "printedPage": 68,
+      "label": "Exemplo fictício"
+    },
+    "penta:69": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 69,
+      "printedPage": 69,
+      "label": "Exemplo fictício"
+    },
+    "penta:70": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 70,
+      "printedPage": 70,
+      "label": "Exemplo fictício"
+    },
+    "penta:71": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-penta.png",
+      "course": "penta",
+      "page": 71,
+      "printedPage": 71,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:84": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 84,
+      "printedPage": 83,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:85": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 85,
+      "printedPage": 84,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:86": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 86,
+      "printedPage": 85,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:87": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 87,
+      "printedPage": 86,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:88": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 88,
+      "printedPage": 87,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:89": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 89,
+      "printedPage": 88,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:90": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 90,
+      "printedPage": 89,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:91": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 91,
+      "printedPage": 90,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:92": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 92,
+      "printedPage": 91,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:93": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 93,
+      "printedPage": 92,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:94": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 94,
+      "printedPage": 93,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:95": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 95,
+      "printedPage": 94,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:96": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 96,
+      "printedPage": 95,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:97": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 97,
+      "printedPage": 96,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:98": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 98,
+      "printedPage": 97,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:99": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 99,
+      "printedPage": 98,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:100": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 100,
+      "printedPage": 99,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:101": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 101,
+      "printedPage": 100,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:102": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 102,
+      "printedPage": 101,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:103": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 103,
+      "printedPage": 102,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:104": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 104,
+      "printedPage": 103,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:105": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 105,
+      "printedPage": 104,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:106": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 106,
+      "printedPage": 105,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:107": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 107,
+      "printedPage": 106,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:108": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 108,
+      "printedPage": 107,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:109": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 109,
+      "printedPage": 108,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:110": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 110,
+      "printedPage": 109,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:111": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 111,
+      "printedPage": 110,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:112": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 112,
+      "printedPage": 111,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:113": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 113,
+      "printedPage": 112,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:114": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 114,
+      "printedPage": 113,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:115": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 115,
+      "printedPage": 114,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:116": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 116,
+      "printedPage": 115,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:117": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 117,
+      "printedPage": 116,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:118": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 118,
+      "printedPage": 117,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:119": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 119,
+      "printedPage": 118,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:120": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 120,
+      "printedPage": 119,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:121": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 121,
+      "printedPage": 120,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:122": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 122,
+      "printedPage": 121,
+      "label": "Exemplo fictício"
+    },
+    "harmonia:123": {
+      "title": "Página de exemplo para testar a interface",
+      "file": "assets/demo-harmonia.png",
+      "course": "harmonia",
+      "page": 123,
+      "printedPage": 122,
+      "label": "Exemplo fictício"
+    }
+  },
+  "tracks": [],
+  "positions": {},
+  "manual": []
+}

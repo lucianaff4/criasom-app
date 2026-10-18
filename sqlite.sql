@@ -1,0 +1,14 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, email_verified_at INTEGER NOT NULL, created_at INTEGER NOT NULL);
+CREATE TABLE auth_challenges (id TEXT PRIMARY KEY, email TEXT NOT NULL, code_hash TEXT NOT NULL, binding_hash TEXT NOT NULL, requester_hash TEXT NOT NULL, created_at INTEGER NOT NULL, expires_at INTEGER NOT NULL, attempts INTEGER NOT NULL DEFAULT 0 CHECK(attempts BETWEEN 0 AND 5), used_at INTEGER);
+CREATE INDEX challenge_email_time ON auth_challenges(email,created_at);
+CREATE INDEX challenge_requester_time ON auth_challenges(requester_hash,created_at);
+CREATE TABLE auth_quotas (bucket_hash TEXT PRIMARY KEY, window_start INTEGER NOT NULL, hits INTEGER NOT NULL CHECK(hits>=0));
+CREATE TABLE sessions (token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id), csrf_hash TEXT NOT NULL, created_at INTEGER NOT NULL, expires_at INTEGER NOT NULL, revoked_at INTEGER);
+CREATE TABLE email_outbox (id TEXT PRIMARY KEY, idempotency_key TEXT NOT NULL UNIQUE, payload_sealed TEXT NOT NULL, status TEXT NOT NULL, created_at INTEGER NOT NULL);
+CREATE TABLE purchase_sources (transaction_id TEXT PRIMARY KEY, email TEXT NOT NULL, product_id TEXT NOT NULL, offer_code TEXT NOT NULL, state_json TEXT NOT NULL, revision INTEGER NOT NULL DEFAULT 0, quarantine_reason TEXT);
+CREATE INDEX purchase_owner ON purchase_sources(email);
+CREATE TABLE purchase_events (event_id TEXT PRIMARY KEY, payload_hash TEXT NOT NULL, transaction_id TEXT NOT NULL REFERENCES purchase_sources(transaction_id), disposition TEXT NOT NULL, received_at INTEGER NOT NULL);
+CREATE TABLE protected_objects (id TEXT PRIMARY KEY, storage_key TEXT NOT NULL UNIQUE, provider TEXT NOT NULL, mime TEXT NOT NULL, required_scopes_json TEXT NOT NULL, visibility TEXT NOT NULL, owner_id TEXT REFERENCES users(id), status TEXT NOT NULL);
+CREATE TABLE object_teacher_access (object_id TEXT NOT NULL REFERENCES protected_objects(id), user_id TEXT NOT NULL REFERENCES users(id), PRIMARY KEY(object_id,user_id));
+CREATE TABLE user_state (user_id TEXT NOT NULL REFERENCES users(id), area TEXT NOT NULL, revision INTEGER NOT NULL, data_json TEXT NOT NULL, updated_at INTEGER NOT NULL, PRIMARY KEY(user_id,area));

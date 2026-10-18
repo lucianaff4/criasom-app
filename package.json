@@ -1,0 +1,14 @@
+{
+  "name": "criasom-community-development",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Código do piloto Criasom com dados fictícios para desenvolvimento colaborativo",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "dev": "node work/production-base/dev/run-local.mjs",
+    "demo": "node scripts/demo-server.mjs",
+    "build:demo": "node work/criasom-app-piloto/bundle.cjs",
+    "test": "node scripts/test.mjs",
+    "check:package": "node scripts/audit.mjs"
+  }
+}
